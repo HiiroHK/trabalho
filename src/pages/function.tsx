@@ -42,7 +42,7 @@ export function Funcionamento() {
                 </DialogTrigger>
                 <DialogContent>
                   <DialogHeader>
-                    <DialogTitle></DialogTitle>
+                    <DialogTitle>Como funciona a geração de chaves</DialogTitle>
                   </DialogHeader>
                   <h4>
                     A criptografia RSA começa escolhendo dois primos grandes, 𝑝
@@ -72,7 +72,7 @@ export function Funcionamento() {
                 </DialogTrigger>
                 <DialogContent>
                   <DialogHeader>
-                    <DialogTitle></DialogTitle>
+                    <DialogTitle>Função de Euler</DialogTitle>
                   </DialogHeader>
                   <h4>
                     A função de Euler 𝜙 ( 𝑛 ) ϕ(n) conta quantos números
@@ -107,7 +107,7 @@ export function Funcionamento() {
                 </DialogTrigger>
                 <DialogContent>
                   <DialogHeader>
-                    <DialogTitle></DialogTitle>
+                    <DialogTitle>Oque é a chave pública</DialogTitle>
                   </DialogHeader>
                   <DialogFooter>
                     <h4>
@@ -116,7 +116,8 @@ export function Funcionamento() {
                       expoente público escolhido (como 3, 17 ou 65537) Essa
                       chave é usada por qualquer um que queira enviar mensagens
                       seguras pra você — eles usam 𝑒 e 𝑛 para criptografar os
-                      dados. Mas só você, com a chave privada, pode decifrá-los.{" "}
+                      dados. Mas só você, com a chave privada, pode
+                      decifrá-los.{" "}
                     </h4>
                     <DialogClose>
                       <button className="border p-2 rounded-md">fechar</button>
@@ -138,7 +139,7 @@ export function Funcionamento() {
                 </DialogTrigger>
                 <DialogContent>
                   <DialogHeader>
-                    <DialogTitle></DialogTitle>
+                    <DialogTitle>Oque é a chave privada</DialogTitle>
                   </DialogHeader>
                   <h4>
                     Na criptografia RSA, a chave privada é o número 𝑑, calculado

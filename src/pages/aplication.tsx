@@ -1,6 +1,11 @@
 import { Introduction } from "@/components/introduction";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Dialog, DialogTrigger } from "@/components/ui/dialog";
+import {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import { CreditCard, Globe, Shield } from "lucide-react";
 
 export function Aplicação() {
@@ -30,6 +35,27 @@ export function Aplicação() {
                     </p>
                   </Card>
                 </DialogTrigger>
+                <DialogContent>
+                  {" "}
+                  <p>
+                    A criptografia RSA é fundamental no funcionamento do
+                    HTTPS/SSL porque permite a **troca segura de chaves** entre
+                    o cliente (navegador) e o servidor. De forma breve: 1.
+                    **Durante o início da conexão HTTPS**, o servidor envia sua
+                    **chave pública RSA** ao cliente. 2. O cliente usa essa
+                    chave pública para **criptografar uma chave de sessão**
+                    (usada depois com criptografia simétrica, mais rápida). 3.
+                    Só o servidor, com sua **chave privada RSA**, consegue
+                    **descriptografar** essa chave de sessão. 4. A partir daí, a
+                    comunicação é segura, usando criptografia simétrica com a
+                    chave compartilhada. Assim, o RSA garante que apenas o
+                    servidor possa ler as informações enviadas inicialmente,
+                    protegendo contra espionagem e ataques.
+                  </p>
+                  <DialogClose>
+                    <button className="border p-2 rounded-md">fechar</button>
+                  </DialogClose>
+                </DialogContent>
               </Dialog>
               <Dialog>
                 <DialogTrigger>
@@ -46,6 +72,25 @@ export function Aplicação() {
                     </p>
                   </Card>
                 </DialogTrigger>
+                <DialogContent>
+                  <p>
+                    A criptografia RSA ajuda nas transações bancárias ao
+                    garantir **segurança e autenticidade** dos dados. De forma
+                    breve: 1. **Confidencialidade**: Dados sensíveis (como
+                    senhas e informações bancárias) são criptografados com a
+                    **chave pública** do banco, garantindo que **somente o
+                    banco** (com sua chave privada) possa lê-los. 2.
+                    **Autenticidade e integridade**: O banco pode assinar
+                    digitalmente mensagens com sua **chave privada**, permitindo
+                    que o cliente confirme a autenticidade usando a **chave
+                    pública** do banco. Dessa forma, o RSA protege contra
+                    fraudes, roubo de dados e garante que a comunicação é segura
+                    e confiável.
+                  </p>
+                  <DialogClose>
+                    <button className="border p-2 rounded-md">fechar</button>
+                  </DialogClose>
+                </DialogContent>
               </Dialog>
               <Dialog>
                 <DialogTrigger>
@@ -62,6 +107,23 @@ export function Aplicação() {
                     </p>
                   </Card>
                 </DialogTrigger>
+                <DialogContent>
+                  <p>
+                    A criptografia RSA é usada em assinaturas digitais para
+                    **garantir a autenticidade e integridade** de uma mensagem.
+                    De forma breve: 1. Quem envia a mensagem usa sua **chave
+                    privada RSA** para **assinar** um resumo (hash) da mensagem.
+                    2. Quem recebe usa a **chave pública RSA** do remetente para
+                    **verificar** a assinatura. 3. Se a verificação for válida,
+                    isso prova que a mensagem: * **Veio do remetente certo**
+                    (autenticidade), * **Não foi alterada** (integridade).
+                    Assim, o RSA permite confirmar que o conteúdo é confiável e
+                    realmente veio de quem diz ter enviado.
+                  </p>
+                  <DialogClose>
+                    <button className="border p-2 rounded-md">fechar</button>
+                  </DialogClose>
+                </DialogContent>
               </Dialog>
             </CardContent>
           </Card>
