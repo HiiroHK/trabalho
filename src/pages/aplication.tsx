@@ -24,7 +24,7 @@ export function Aplicação() {
             <CardContent className="grid grid-cols-3 gap-3">
               <Dialog>
                 <DialogTrigger>
-                  <Card className="p-2 bg-blue-100 border border-blue-100">
+                  <Card className=" bg-blue-100 border border-blue-100">
                     <CardHeader className="grid justify-center">
                       <Globe className="mx-auto w-12 h-12 text-blue-600" />
                       <CardTitle className="text-blue-600">HTTPS/SSL</CardTitle>
@@ -36,17 +36,18 @@ export function Aplicação() {
                   </Card>
                 </DialogTrigger>
                 <DialogContent>
+                  <h1 className="text-[20px] font-bold">HTTPS/SSL</h1>
                   {" "}
                   <p>
-                    A criptografia RSA é fundamental no funcionamento do
-                    HTTPS/SSL porque permite a **troca segura de chaves** entre
-                    o cliente (navegador) e o servidor. De forma breve: 1.
-                    **Durante o início da conexão HTTPS**, o servidor envia sua
-                    **chave pública RSA** ao cliente. 2. O cliente usa essa
-                    chave pública para **criptografar uma chave de sessão**
-                    (usada depois com criptografia simétrica, mais rápida). 3.
-                    Só o servidor, com sua **chave privada RSA**, consegue
-                    **descriptografar** essa chave de sessão. 4. A partir daí, a
+                    <h1 className="text-[18px] font-bold">A criptografia RSA é fundamental no funcionamento do
+                    HTTPS/SSL porque permite a{' '}<strong>troca segura de chaves</strong> entre
+                    o cliente (navegador) e o servidor. De forma breve:</h1>{' '}
+                    <strong>Durante o início da conexão HTTPS</strong>, o servidor envia sua{' '}
+                    <strong>chave pública RSA</strong> ao cliente. O cliente usa essa
+                    chave pública para{' '}<strong>criptografar uma chave de sessão</strong>
+                    (usada depois com criptografia simétrica, mais rápida).
+                    Só o servidor, com sua{' '}<strong>chave privada RSA</strong>, consegue{' '}
+                    <strong>descriptografar</strong> essa chave de sessão. A partir daí, a
                     comunicação é segura, usando criptografia simétrica com a
                     chave compartilhada. Assim, o RSA garante que apenas o
                     servidor possa ler as informações enviadas inicialmente,
@@ -59,7 +60,7 @@ export function Aplicação() {
               </Dialog>
               <Dialog>
                 <DialogTrigger>
-                  <Card className="p-2 bg-green-100 border border-green-100">
+                  <Card className=" bg-green-100 border border-green-100">
                     <CardHeader className="grid justify-center">
                       <CreditCard className="mx-auto w-12 h-12 text-green-600" />
                       <CardTitle className="text-green-600">
@@ -73,17 +74,19 @@ export function Aplicação() {
                   </Card>
                 </DialogTrigger>
                 <DialogContent>
+                <h1 className="text-[20px] font-bold">Para transações bancárias</h1>
+                {" "}
                   <p>
-                    A criptografia RSA ajuda nas transações bancárias ao
-                    garantir **segurança e autenticidade** dos dados. De forma
-                    breve: 1. **Confidencialidade**: Dados sensíveis (como
+                    <h1 className="text-[18px] font-bold">A criptografia RSA ajuda nas transações bancárias ao
+                    garantir{' '}<strong>segurança e autenticidade</strong> dos dados. De forma
+                    breve:</h1>{' '}<strong>Confidencialidade:</strong> Dados sensíveis (como
                     senhas e informações bancárias) são criptografados com a
-                    **chave pública** do banco, garantindo que **somente o
-                    banco** (com sua chave privada) possa lê-los. 2.
-                    **Autenticidade e integridade**: O banco pode assinar
-                    digitalmente mensagens com sua **chave privada**, permitindo
-                    que o cliente confirme a autenticidade usando a **chave
-                    pública** do banco. Dessa forma, o RSA protege contra
+                  {' '}<strong>chave pública</strong> do banco, garantindo que{' '}<strong>somente o
+                    banco</strong> (com sua chave privada) possa lê-los.
+                  {' '}<strong>Autenticidade e integridade:</strong> O banco pode assinar
+                    digitalmente mensagens com sua{' '}<strong>chave privada</strong>, permitindo
+                    que o cliente confirme a autenticidade usando a{' '}<strong>chave
+                    pública</strong> do banco. Dessa forma, o RSA protege contra
                     fraudes, roubo de dados e garante que a comunicação é segura
                     e confiável.
                   </p>
@@ -94,7 +97,7 @@ export function Aplicação() {
               </Dialog>
               <Dialog>
                 <DialogTrigger>
-                  <Card className="p-2 bg-purple-100 border border-purple-100">
+                  <Card className="p-6 bg-purple-100 border border-purple-100">
                     <CardHeader className="grid justify-center">
                       <Shield className="mx-auto w-12 h-12 text-purple-600" />
                       <CardTitle className="text-purple-600">
@@ -108,15 +111,17 @@ export function Aplicação() {
                   </Card>
                 </DialogTrigger>
                 <DialogContent>
+                  <h1 className="text-[20px] font-bold">Assinatura digital</h1>
+                  {" "}
                   <p>
-                    A criptografia RSA é usada em assinaturas digitais para
-                    **garantir a autenticidade e integridade** de uma mensagem.
-                    De forma breve: 1. Quem envia a mensagem usa sua **chave
-                    privada RSA** para **assinar** um resumo (hash) da mensagem.
-                    2. Quem recebe usa a **chave pública RSA** do remetente para
-                    **verificar** a assinatura. 3. Se a verificação for válida,
-                    isso prova que a mensagem: * **Veio do remetente certo**
-                    (autenticidade), * **Não foi alterada** (integridade).
+                    <h1 className="text-[18px] font-bold">A criptografia RSA é usada em assinaturas digitais para
+                  {' '}<strong>garantir a autenticidade e integridade</strong> de uma mensagem.
+                    De forma breve:</h1> Quem envia a mensagem usa sua{' '}<strong>chave
+                    privada RSA</strong> para{' '}<strong>assinar</strong> um resumo (hash) da mensagem.
+                     Quem recebe usa a{' '}<strong>chave pública RSA</strong> do remetente para
+                  {' '}<strong>verificar</strong> a assinatura. 3. Se a verificação for válida,
+                    isso prova que a mensagem:{' '}<strong>Veio do remetente certo</strong>
+                    (autenticidade),{' '}<strong>Não foi alterada</strong> (integridade).
                     Assim, o RSA permite confirmar que o conteúdo é confiável e
                     realmente veio de quem diz ter enviado.
                   </p>

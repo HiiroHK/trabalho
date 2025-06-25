@@ -75,9 +75,9 @@ export function Funcionamento() {
                     <DialogTitle>Função de Euler</DialogTitle>
                   </DialogHeader>
                   <h4>
-                    A função de Euler 𝜙 ( 𝑛 ) ϕ(n) conta quantos números
+                    A função de Euler 𝜙 ( 𝑛 ) conta quantos números
                     inteiros positivos menores que 𝑛 são coprimos com ele. Se 𝑛
-                    é primo, então 𝜙 ( 𝑛 ) = 𝑛 − 1 ϕ(n)=n−1, pois todos os
+                    é primo, então 𝜙 ( 𝑛 ) = 𝑛 − 1, pois todos os
                     menores que ele são coprimos. Se 𝑛 = 𝑝 ⋅ 𝑞 com 𝑝 e 𝑞 primos,
                     então 𝜙 ( 𝑛 ) = ( 𝑝 − 1 ) ( 𝑞 − 1 ). Ela é essencial na
                     criptografia RSA para calcular a chave privada com
@@ -109,8 +109,7 @@ export function Funcionamento() {
                   <DialogHeader>
                     <DialogTitle>Oque é a chave pública</DialogTitle>
                   </DialogHeader>
-                  <DialogFooter>
-                    <h4>
+                  <h4>
                       Na criptografia RSA, a chave pública é composta por dois
                       números: n, o produto dos primos secretos 𝑝 ⋅ 𝑞 e, o
                       expoente público escolhido (como 3, 17 ou 65537) Essa
@@ -119,6 +118,7 @@ export function Funcionamento() {
                       dados. Mas só você, com a chave privada, pode
                       decifrá-los.{" "}
                     </h4>
+                  <DialogFooter>
                     <DialogClose>
                       <button className="border p-2 rounded-md">fechar</button>
                     </DialogClose>
